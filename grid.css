@@ -1,0 +1,13 @@
+.space-purple {
+	background-color: purple;
+}
+
+.space-pink {
+	background-color: pink;
+}
+
+.grid-square {
+	display: inline-block;
+	height: 120px;
+	width: 90px;
+}

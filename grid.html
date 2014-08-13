@@ -1,0 +1,15 @@
+<html>
+<head>
+	<script src="http://code.angularjs.org/1.2.10/angular.js"></script>
+	<!--<script src="http://code.createjs.com/easeljs-0.7.1.min.js"></script> -->
+	<script src="grid.js"></script>
+	<link rel="stylesheet" type="text/css" href="grid.css">
+</head>
+<body ng-app="gridPrototype">
+	<div ng-controller="gridController">
+		<label>Number of rows/columns: </label> <input type="text" ng-model="inputRows"></input>
+		<div ng-repeat="item in grid(inputRows)">
+			<div ng-repeat="value in item" class="grid-square" ng-class="value.value"></div>
+		</div>
+	</div>
+</body>
